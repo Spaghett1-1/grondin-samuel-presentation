@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Roboto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "Navigation"
+    "Contenu";
+    min-height: 100vh;
+}
+
+header {
+    grid-area: Navigation;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.Navigation {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: lightblue;
+    color: #ffffff;
+}
+
+.Navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.Navigation li {
+    margin-left: 20px;
+}
+
+.Navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 8px  10px;
+    transition: all 0.3s ease;
+    outline: auto cadetblue;
+}
+
+main {
+    grid-area: Contenu;
+
+    padding: 20px;
+}
+
+
+.Navigation a:hover {
+    background-color: #34495e;
+    color: #3498db;
+    transform: translateY(-2px);
+}
+.Navigation a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #3498db;
+    transition: all 0.3s ease;
+}
+.Navigation a:hover::after {
+    width: 100%;
+    left: 0;
+}
