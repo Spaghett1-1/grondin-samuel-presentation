@@ -9,7 +9,8 @@ html, body {
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "Navigation"
-    "Contenu";
+    "Contenu"
+    "pied-page";
     min-height: 100vh;
 }
 
@@ -19,6 +20,7 @@ header {
     padding: 15px;
 }
 
+/* Navigation */
 .Navigation {
     display: flex;
     align-items: center;
@@ -50,12 +52,6 @@ header {
     outline: auto cadetblue;
 }
 
-main {
-    grid-area: Contenu;
-
-    padding: 20px;
-}
-
 
 .Navigation a:hover {
     background-color: #34495e;
@@ -75,4 +71,141 @@ main {
 .Navigation a:hover::after {
     width: 100%;
     left: 0;
+}
+
+main {
+    grid-area: Contenu;
+
+    padding: 20px;
+}
+
+footer {
+    grid-area: pied-page;
+    background-color: lightblue; 
+    color: #ffffff;              
+    padding: 15px;              
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    justify-content: center;
+    margin-top: auto;       
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.presentation-hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto; /* Centre le bloc verticalement et horizontalement */
+    padding: 20px;
+}
+
+/* Le Nom (Grand et lisible) */
+.name-title {
+    font-size: 3rem;
+    margin: 0;
+    color: #2c3e50; /* Bleu nuit */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Le Titre du poste */
+.job-title {
+    font-size: 1.5rem;
+    color: #3498db; /* Bleu clair */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* Le texte de présentation */
+.pitch-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pitch-container strong {
+    color: #2c3e50;
+    font-weight: bold;
+    background-color: #e3f2fd; /* Surlignage léger bleu très clair */
+    padding: 2px 5px;
+}
+
+/* --- LES BOUTONS --- */
+.action-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-main {
+    background-color: #2c3e50;
+    color: white;
+    border: 2px solid #2c3e50;
+}
+
+.btn-main:hover {
+    background-color: #34495e;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+}
+
+.btn-secondary:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* --- PETITE BARRE DE COMPÉTENCES --- */
+.mini-skills {
+    margin-top: 50px;
+    color: #888;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mini-skills span {
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 5px 0; 
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+
+footer a:hover {
+    background-color: #34495e; 
+    color: #3498db;            
+    transform: translateY(-2px); 
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 10px;
 }
