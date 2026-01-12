@@ -1,0 +1,59 @@
+/* main grid contener */
+.parcours-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Titre */
+.titre-page {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* grid */
+.grille-parcours {
+    display: grid;
+    grid-template-columns: 1fr;     /* colonne */
+    gap: 20px; /* grid size */
+}
+
+/* card box style */
+.etape {
+    background-color: white;
+    border: 1px solid #ccc; /* Border, color */
+    border-radius: 8px;     /* Arroundi */
+    padding: 20px;
+    text-align: left;       
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+/* etape actuelle */
+.actuel {
+    border: 2px solid #3498db; 
+    background-color: #f0f8ff; 
+}
+
+/* Year box */ 
+.annee {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.etape h3 {
+    margin: 5px 0;
+    color: #3498db;
+}
+
+.etape p {
+    color: #555;
+    line-height: 1.5;
+}

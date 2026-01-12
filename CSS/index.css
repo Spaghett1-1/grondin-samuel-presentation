@@ -17,7 +17,7 @@ html, body {
 header {
     grid-area: Navigation;
     color: #ffffff;
-    padding: 15px;
+    padding: 0px;
 }
 
 /* Navigation */
@@ -78,7 +78,7 @@ main {
 
     padding: 20px;
 }
-
+/* Pieds de page */
 footer {
     grid-area: pied-page;
     background-color: lightblue; 
@@ -99,25 +99,25 @@ footer {
     padding: 20px;
 }
 
-/* Le Nom (Grand et lisible) */
+/* Name */
 .name-title {
     font-size: 3rem;
     margin: 0;
-    color: #2c3e50; /* Bleu nuit */
+    color: #2c3e50; 
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-/* Le Titre du poste */
+/* Statut actuel */
 .job-title {
     font-size: 1.5rem;
-    color: #3498db; /* Bleu clair */
+    color: #3498db; 
     margin-top: 10px;
     margin-bottom: 30px;
     font-weight: 500;
 }
 
-/* Le texte de présentation */
+/* Texte */
 .pitch-container p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -125,14 +125,15 @@ footer {
     margin-bottom: 20px;
 }
 
+/* Anim 1 */
 .pitch-container strong {
     color: #2c3e50;
     font-weight: bold;
-    background-color: #e3f2fd; /* Surlignage léger bleu très clair */
+    background-color: #e3f2fd; 
     padding: 2px 5px;
 }
 
-/* --- LES BOUTONS --- */
+/* Button */
 .action-buttons {
     margin-top: 40px;
     display: flex;
@@ -171,19 +172,7 @@ footer {
     color: white;
 }
 
-/* --- PETITE BARRE DE COMPÉTENCES --- */
-.mini-skills {
-    margin-top: 50px;
-    color: #888;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.mini-skills span {
-    margin: 0 10px;
-}
-
+/* Pieds de page */
 footer p {
     margin: 5px 0; 
 }
